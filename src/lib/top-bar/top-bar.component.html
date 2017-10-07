@@ -1,1 +1,24 @@
-Harmony Top Bar
+<header class="hmn-top-bar">
+	<a class="hmn-top-bar__logo">
+		<img *ngIf="productLogoImage"
+			 [src]="productLogoPath + productLogoImage"
+			 class="hmn-top-bar__logo__image"/>
+
+		<div *ngIf="productTitle"
+			 class="hmn-top-bar__logo__title__container">
+
+			<span *ngIf="productTitle"
+				  [style.color]="productColor"
+				  class="hmn-top-bar__logo__title">
+
+				{{productTitle}}
+			</span>
+
+			<span *ngIf="productSubTitle"
+				  class="hmn-top-bar__logo__sub-title">
+
+				{{productSubTitle}}
+			</span>
+		</div>
+	</a>
+</header>

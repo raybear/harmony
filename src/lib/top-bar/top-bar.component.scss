@@ -1,0 +1,36 @@
+@import "../core/theming/palette";
+
+.hmn-top-bar {
+	display: flex;
+	align-items: center;
+	padding: 0 15px;
+	height: 55px;
+	background: map_get($hmn-gray, 'f');
+	box-shadow: 0 0 5px rgba(#000, .5);
+
+	&__logo {
+		display: flex;
+		align-self: center;
+		align-items: center;
+
+		&__image {
+			margin-right: 10px;
+		}
+
+		&__title {
+
+			font-weight: 500;
+
+			&__container {
+				display: flex;
+				flex-direction: column;
+			}
+
+		}
+
+		&__sub-title {
+			font-size: 12px;
+			color: map_get($hmn-gray, 'a');
+		}
+	}
+}

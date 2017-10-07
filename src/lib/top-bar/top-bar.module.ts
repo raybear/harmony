@@ -1,8 +1,12 @@
+import { CommonModule } from '@angular/common';
 import { ModuleWithProviders, NgModule } from '@angular/core';
+
 import { HmnTopBarComponent } from './top-bar.component';
 
 @NgModule({
-	imports: [],
+	imports: [
+		CommonModule
+	],
 	exports: [
 		HmnTopBarComponent
 	],
