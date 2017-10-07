@@ -54,4 +54,7 @@ export class HmnTopBarComponent {
 
 	@Input('menu')
 	public menuItems: HmnTopBarLink[];
+
+	@Input('search-placeholder')
+	public searchPlaceholder: string;
 }

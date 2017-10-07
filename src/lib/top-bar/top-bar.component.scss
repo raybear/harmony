@@ -36,7 +36,7 @@
 	&__nav {
 		display: flex;
 		align-self: stretch;
-		margin-left: 15px;
+		margin: 0 15px;
 
 		ul {
 			display: flex;
@@ -63,6 +63,42 @@
 					}
 				}
 			}
+		}
+	}
+
+	&__search {
+		position: relative;
+		display: flex;
+		align-self: center;
+
+		input[type=search] {
+			border: none;
+			background: map_get($hmn-gray, 'e');
+			outline: none;
+			padding: 5px 10px 5px 34px;
+		}
+
+		&:hover {
+
+			&:after {
+				color: map_get($hmn-gray, 'a');
+			}
+		}
+
+		&:after {
+			position: absolute;
+			left: 10px;
+			top: 0;
+			bottom: 0;
+			width: 14px;
+			font-size: 14px;
+			text-align: right;
+			height: 29px;
+			line-height: 29px;
+			content: '\f002';
+			font-family: FontAwesome;
+			color: map_get($hmn-gray, 'c');
+			transition: color .2s;
 		}
 	}
 }
