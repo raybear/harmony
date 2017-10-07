@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { HmnTopBarLink } from './top-bar-link.interface';
 
 @Component({
 	moduleId: module.id,
@@ -50,4 +51,7 @@ export class HmnTopBarComponent {
 	 */
 	@Input('product-color')
 	public productColor: string;
+
+	@Input('menu')
+	public menuItems: HmnTopBarLink[];
 }

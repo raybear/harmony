@@ -24,19 +24,9 @@
 
 	<nav class="hmn-top-bar__nav">
 		<ul>
-			<li>
+			<li *ngFor="let item of menuItems">
 				<a>
-					Home
-				</a>
-			</li>
-			<li>
-				<a>
-					Components
-				</a>
-			</li>
-			<li>
-				<a>
-					Guidelines
+					{{item.title}}
 				</a>
 			</li>
 		</ul>
