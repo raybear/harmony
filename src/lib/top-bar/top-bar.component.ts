@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { HmnTopBarLink } from './top-bar-link.interface';
 
 @Component({
@@ -64,8 +64,15 @@ export class HmnTopBarComponent {
 	@Input('avatar-image')
 	public avatarImage: string;
 
+	@Output()
+	public searchEmitter: EventEmitter<string> = new EventEmitter<string>();
+
 	public getAvatarImage(): string {
 		// TODO: Change avatar logo path to be dynamic if required
 		return this.avatarImage ? this.productLogoPath + this.avatarImage : this.productLogoPath + this.noAvatarImage;
+	}
+
+	public emitSearch(query: string): void {
+		this.searchEmitter.emit(query);
 	}
 }
