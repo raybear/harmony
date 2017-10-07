@@ -1,9 +1,15 @@
 import { ModuleWithProviders, NgModule } from '@angular/core';
 
-const HARMONY_MODULES = [];
+import { HmnTopBarModule } from './top-bar/top-bar.module';
+
+const HARMONY_MODULES = [
+	HmnTopBarModule
+];
 
 @NgModule({
-	imports: [],
+	imports: [
+		HmnTopBarModule.forRoot()
+	],
 	exports: HARMONY_MODULES
 })
 export class HarmonyRootModule {}
@@ -13,7 +19,7 @@ export class HarmonyRootModule {}
 	exports: HARMONY_MODULES
 })
 export class HarmonyModule {
-	static forRoot(): ModuleWithProviders {
+	public static forRoot(): ModuleWithProviders {
 		return {
 			ngModule: HarmonyRootModule
 		};
