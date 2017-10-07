@@ -28,13 +28,26 @@ export class HmnTopBarComponent {
 
 	/**
 	 * Name that will be displayed at the right side of logo image.
+	 *
+	 * @type {string}
 	 */
 	@Input('product-title')
 	public productTitle: string;
 
+	/**
+	 * Sub title that will be displayed bellow product title.
+	 * Note: In case product title is null, sub title won't be displayed.
+	 *
+	 * @type {string}
+	 */
 	@Input('product-sub-title')
 	public productSubTitle: string;
 
+	/**
+	 * Main product color will be used as product title in logo
+	 *
+	 * @type {string}
+	 */
 	@Input('product-color')
 	public productColor: string;
 }

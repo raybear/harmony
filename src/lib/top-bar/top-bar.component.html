@@ -1,4 +1,4 @@
-<header class="hmn-top-bar">
+<header class="hmn-top-bar" [style.border-top]="'3px solid ' + productColor">
 	<a class="hmn-top-bar__logo">
 		<img *ngIf="productLogoImage"
 			 [src]="productLogoPath + productLogoImage"
@@ -21,4 +21,24 @@
 			</span>
 		</div>
 	</a>
+
+	<nav class="hmn-top-bar__nav">
+		<ul>
+			<li>
+				<a>
+					Home
+				</a>
+			</li>
+			<li>
+				<a>
+					Components
+				</a>
+			</li>
+			<li>
+				<a>
+					Guidelines
+				</a>
+			</li>
+		</ul>
+	</nav>
 </header>
