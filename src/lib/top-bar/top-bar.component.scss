@@ -2,6 +2,7 @@
 
 .hmn-top-bar {
 	display: flex;
+	justify-content: space-between;
 	align-items: center;
 	padding: 0 15px;
 	height: 55px;
@@ -70,8 +71,11 @@
 		position: relative;
 		display: flex;
 		align-self: center;
+		flex-grow: 1;
 
 		input[type=search] {
+			display: block;
+			width: 100%;
 			border: none;
 			background: map_get($hmn-gray, 'e');
 			outline: none;
@@ -99,6 +103,20 @@
 			font-family: FontAwesome;
 			color: map_get($hmn-gray, 'c');
 			transition: color .2s;
+		}
+	}
+
+	&__actions {
+		margin-left: 15px;
+
+		&__user-icon {
+			display: flex;
+			align-self: center;
+			width: 35px;
+			height: 35px;
+			border-radius: 50%;
+			border: 2px solid map_get($hmn-gray, 'white');
+			box-shadow: 0 0 1px map_get($hmn-gray, 'a');
 		}
 	}
 }

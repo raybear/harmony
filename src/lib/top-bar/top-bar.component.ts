@@ -57,4 +57,15 @@ export class HmnTopBarComponent {
 
 	@Input('search-placeholder')
 	public searchPlaceholder: string;
+
+	@Input('no-avatar-image')
+	public noAvatarImage = 'no-avatar.png';
+
+	@Input('avatar-image')
+	public avatarImage: string;
+
+	public getAvatarImage(): string {
+		// TODO: Change avatar logo path to be dynamic if required
+		return this.avatarImage ? this.productLogoPath + this.avatarImage : this.productLogoPath + this.noAvatarImage;
+	}
 }
