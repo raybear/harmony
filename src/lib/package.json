@@ -6,6 +6,7 @@
 		"type": "git",
 		"url": "https://github.com/raybear/harmony.git"
 	},
+	"module": "index.js",
 	"keywords": [
 		"angular",
 		"harmony",
@@ -17,7 +18,10 @@
 		"url": "https://github.com/raybear/harmony/issues"
 	},
 	"homepage": "https://harmony.raybear.com/",
-	"peerDependencies": {},
+	"peerDependencies": {
+		"@angular/core": "^4.0.0",
+		"@angular/common": "^4.0.0"
+	},
 	"dependencies": {
 		"tslib": "^1.7.1"
 	}
