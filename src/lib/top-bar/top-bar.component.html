@@ -24,7 +24,11 @@
 
 	<nav class="hmn-top-bar__nav">
 		<ul>
-			<li *ngFor="let item of menuItems">
+			<li *ngFor="let item of menuItems; let i = index"
+				(mouseover)="hoveredMenuItem = i"
+				(mouseleave)="hoveredMenuItem = null"
+				[ngStyle]="{'border-bottom-color': hoveredMenuItem == i ? productColor : 'transparent'}">
+
 				<a>
 					{{item.title}}
 				</a>

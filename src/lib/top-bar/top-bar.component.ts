@@ -67,6 +67,8 @@ export class HmnTopBarComponent {
 	@Output()
 	public searchEmitter: EventEmitter<string> = new EventEmitter<string>();
 
+	public hoveredMenuItem: number;
+
 	public getAvatarImage(): string {
 		// TODO: Change avatar logo path to be dynamic if required
 		return this.avatarImage ? this.productLogoPath + this.avatarImage : this.productLogoPath + this.noAvatarImage;

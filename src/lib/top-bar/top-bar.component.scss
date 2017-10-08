@@ -49,6 +49,7 @@
 			li {
 				display: flex;
 				align-self: stretch;
+				border-bottom: 1px solid transparent;
 
 				a {
 					padding: 0 15px;
@@ -57,7 +58,7 @@
 					align-self: stretch;
 					line-height: 55px;
 					border-bottom: 2px solid transparent;
-					transition: background .2s;
+					transition: all .1s;
 
 					&:hover {
 						background: rgba(map_get($hmn-gray, 'e'), .5);
