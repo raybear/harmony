@@ -1,10 +1,10 @@
 import { ModuleWithProviders, NgModule } from '@angular/core';
 
-import { HmnPageComponent, HmnPageModule } from './page';
+import { HmnPageModule } from './page';
 import { HmnTopBarModule } from './top-bar';
 
 const HARMONY_MODULES = [
-	HmnPageComponent,
+	HmnPageModule,
 	HmnTopBarModule
 ];
 
