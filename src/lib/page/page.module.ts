@@ -2,6 +2,7 @@ import { ModuleWithProviders, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
+import { HmnFooterModule } from '../footer/footer.module';
 import { HmnTopBarModule } from '../top-bar';
 
 import { HmnPageComponent } from './page.component';
@@ -11,6 +12,7 @@ import { HmnPageComponent } from './page.component';
 		CommonModule,
 		RouterModule,
 
+		HmnFooterModule,
 		HmnTopBarModule
 	],
 	exports: [
