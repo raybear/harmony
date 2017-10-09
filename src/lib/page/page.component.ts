@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 
-import { HmnMenuLink } from '../top-bar';
+import { HmnMenuLink } from '../core/models';
 
 @Component({
 	moduleId: module.id,

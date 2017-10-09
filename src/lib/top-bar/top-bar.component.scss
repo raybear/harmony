@@ -15,6 +15,7 @@
 		display: flex;
 		align-self: center;
 		align-items: center;
+		width: 285px;
 
 		&__image {
 			margin-right: 10px;
@@ -39,7 +40,7 @@
 	&__nav {
 		display: flex;
 		align-self: stretch;
-		margin: 0 15px;
+		margin: 0 15px 0 0;
 
 		ul {
 			display: flex;
@@ -52,6 +53,7 @@
 				display: flex;
 				align-self: stretch;
 				border-bottom: 1px solid transparent;
+				outline: none;
 
 				a {
 					padding: 0 15px;

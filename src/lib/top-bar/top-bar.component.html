@@ -27,7 +27,10 @@
 			<li *ngFor="let item of menu; let i = index"
 				(mouseover)="hoveredMenuItem = i"
 				(mouseleave)="hoveredMenuItem = null"
-				[ngStyle]="{'border-bottom-color': hoveredMenuItem == i ? productColor : 'transparent'}">
+				[routerLink]="item.link"
+				routerLinkActive="active"
+				#rla="routerLinkActive"
+				[ngStyle]="{'border-bottom-color': rla?.isActive || hoveredMenuItem == i ? productColor : 'transparent'}">
 
 				<a>
 					{{item.title}}
