@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 
-import { HmnTopBarLink } from '../top-bar';
+import { HmnMenuLink } from '../top-bar';
 
 @Component({
 	moduleId: module.id,
@@ -56,10 +56,10 @@ export class HmnPageComponent {
 	/**
 	 * Array of menu elements used to render top navigation.
 	 *
-	 * @type {HmnTopBarLink[]}
+	 * @type {HmnMenuLink[]}
 	 */
 	@Input('menu')
-	public menu: HmnTopBarLink[];
+	public menu: HmnMenuLink[];
 
 	/**
 	 * Placeholder for search input.

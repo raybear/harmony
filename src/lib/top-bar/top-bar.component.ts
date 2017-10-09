@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { HmnTopBarLink } from './top-bar-link.interface';
+
+import { HmnMenuLink } from '../core/models';
 
 @Component({
 	moduleId: module.id,
@@ -55,10 +56,10 @@ export class HmnTopBarComponent {
 	/**
 	 * Array of menu elements used to render top navigation.
 	 *
-	 * @type {HmnTopBarLink[]}
+	 * @type {HmnMenuLink[]}
 	 */
 	@Input('menu')
-	public menu: HmnTopBarLink[];
+	public menu: HmnMenuLink[];
 
 	/**
 	 * Placeholder for search input.

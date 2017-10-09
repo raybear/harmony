@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { HmnTopBarLink } from '../../lib/top-bar';
+import { HmnMenuLink } from '../../lib/top-bar';
 
 @Component( {
 	selector: 'hmn-root',
@@ -9,7 +9,7 @@ import { HmnTopBarLink } from '../../lib/top-bar';
 } )
 export class AppComponent {
 
-	public topBarMenuItems: HmnTopBarLink[] = [
+	public topBarMenuItems: HmnMenuLink[] = [
 		{
 			title: 'Home',
 			link: '/'

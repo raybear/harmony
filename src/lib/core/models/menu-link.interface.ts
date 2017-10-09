@@ -1,10 +1,10 @@
 
-export interface HmnTopBarLink {
+export interface HmnMenuLink {
 
 	title?: string;
 	icon?: string;
 	link?: string;
 	disable?: boolean;
 	isExternal?: boolean;
-	children?: HmnTopBarLink[];
+	children?: HmnMenuLink[];
 }
