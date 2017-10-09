@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 
 import { HmnTopBarLink } from '../../lib/top-bar';
 
-
 @Component( {
 	selector: 'hmn-root',
 	templateUrl: './app.component.html',

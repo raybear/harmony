@@ -1,13 +1,14 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { HmnTopBarLink } from './top-bar-link.interface';
+import { Component, Input } from '@angular/core';
+
+import { HmnTopBarLink } from '../top-bar';
 
 @Component({
 	moduleId: module.id,
-	selector: 'hmn-top-bar',
-	templateUrl: './top-bar.component.html',
-	styleUrls: ['./top-bar.component.scss']
+	selector: 'hmn-page',
+	templateUrl: './page.component.html',
+	styleUrls: ['./page.component.scss']
 })
-export class HmnTopBarComponent {
+export class HmnPageComponent {
 
 	/**
 	 * Image that should be used as a logo.
@@ -86,38 +87,4 @@ export class HmnTopBarComponent {
 	 */
 	@Input('avatar-image')
 	public avatarImage: string;
-
-	/**
-	 * Raise an event when search is performed.
-	 *
-	 * @type {EventEmitter<string>}
-	 */
-	@Output()
-	public searchEmitter: EventEmitter<string> = new EventEmitter<string>();
-
-	/**
-	 * Current menu item that is hovered.
-	 *
-	 * @type {number}
-	 */
-	public hoveredMenuItem: number;
-
-	/**
-	 * Returns the avatar image if available or placeholder image otherwise.
-	 *
-	 * @return {string}
-	 */
-	public getAvatarImage(): string {
-		// TODO: Change avatar logo path to be dynamic if required
-		return this.avatarImage ? this.productLogoPath + this.avatarImage : this.productLogoPath + this.noAvatarImage;
-	}
-
-	/**
-	 * Raise search event.
-	 *
-	 * @param {string} query
-	 */
-	public emitSearch(query: string): void {
-		this.searchEmitter.emit(query);
-	}
 }
