@@ -8,5 +8,16 @@
 				 [search-placeholder]="searchPlaceholder"
 				 [no-avatar-image]="noAvatarImage"
 				 [avatar-image]="avatarImage"></hmn-top-bar>
-	<router-outlet></router-outlet>
+
+	<div class="hmn-page__viewport">
+		<!-- TODO: Replace with actual Sidebar component -->
+		<aside class="hmn-sidebar"></aside>
+
+		<div class="hmn-page__viewport__content">
+			<router-outlet></router-outlet>
+		</div>
+	</div>
+
+	<!-- TODO: Replace with actual Footer component -->
+	<footer class="hmn-footer"></footer>
 </div>

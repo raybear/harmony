@@ -1,2 +1,36 @@
 @import "../core/theming/palette";
 
+.hmn-page {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+
+	&__viewport {
+		display: flex;
+		flex-direction: row;
+		flex-grow: 1;
+
+		&__content {
+			box-sizing: border-box;
+			padding: 20px;
+		}
+	}
+}
+
+// TODO: Remove placeholder element style once actual Sidebar component is implemented
+.hmn-sidebar {
+	display: block;
+	width: 300px;
+	background: map_get($hmn-gray, 'f');
+	border-right: 1px solid map_get($hmn-gray, 'e');
+}
+
+// TODO: Remove placeholder element style once actual Footer component is implemented
+.hmn-footer {
+	display: block;
+	height: 50px;
+	background: map_get($hmn-gray, 'f');
+	border-top: 1px solid map_get($hmn-gray, 'e');
+	position: relative;
+	z-index: 100;
+}

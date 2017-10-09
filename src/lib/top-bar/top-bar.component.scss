@@ -8,6 +8,8 @@
 	height: 55px;
 	background: map_get($hmn-gray, 'f');
 	box-shadow: 0 0 5px rgba(#000, .5);
+	position: relative;
+	z-index: 100;
 
 	&__logo {
 		display: flex;
