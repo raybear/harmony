@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { HmnMenuLink } from '../../lib/top-bar';
+import { HmnMenuLink } from '../../lib';
 
 @Component( {
 	selector: 'hmn-root',
