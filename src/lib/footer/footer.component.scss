@@ -25,5 +25,11 @@
 		&__copyright {
 			font-weight: 500;
 		}
+
+		&__copyright,
+		&__version {
+			font-size: 12px;
+			line-height: 16px;
+		}
 	}
 }

@@ -87,4 +87,39 @@ export class HmnPageComponent {
 	 */
 	@Input('avatar-image')
 	public avatarImage: string;
+
+	/**
+	 * Name of product vendor
+	 *
+	 * @type {string}
+	 */
+	@Input('productVendor')
+	public productVendor = 'RayBear, Ltd';
+
+	/**
+	 * Staring year of product copyright.
+	 *
+	 * In case where product copyright year is before current year
+	 * both start and current year will be displayed automatically.
+	 *
+	 * @type {number}
+	 */
+	@Input('productCopyrightYear')
+	public productCopyrightYear: number;
+
+	/**
+	 * Current version number of the product
+	 *
+	 * @type {string}
+	 */
+	@Input('productVersion')
+	public productVersion = '1.0.0';
+
+	/**
+	 * Additional product version name
+	 *
+	 * @type {string}
+	 */
+	@Input('productVersionName')
+	public productVersionName: string;
 }

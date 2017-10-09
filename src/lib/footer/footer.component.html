@@ -2,12 +2,14 @@
 	<div class="hmn-footer__left">
 		<div class="hmn-footer__left__copyright">
 			<i class="fa fa-copyright"></i>
-			2017 RayBear, Ltd
+			{{getCopyrightYear()}}
+			{{productVendor}}
 			-
 			All Right Reserved
 		</div>
 		<div class="hmn-footer__left__version">
-			Version 1.0.0 ( Avala )
+			Version {{productVersion}}
+			<span *ngIf="productVersionName">( {{productVersionName}} )</span>
 		</div>
 	</div>
 	<div class="hmn-footer__center">
