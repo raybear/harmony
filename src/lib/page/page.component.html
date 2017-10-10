@@ -1,25 +1,26 @@
-<div class="hmn-page">
-	<hmn-top-bar [product-logo]="productLogoImage"
-				 [product-logo-path]="productLogoPath"
-				 [product-title]="productTitle"
-				 [product-sub-title]="productSubTitle"
-				 [product-color]="productColor"
-				 [menu]="menu"
-				 [search-placeholder]="searchPlaceholder"
-				 [no-avatar-image]="noAvatarImage"
-				 [avatar-image]="avatarImage"></hmn-top-bar>
+<div class = "hmn-page">
+	<hmn-top-bar [product-logo] = "productLogoImage"
+				 [product-logo-path] = "productLogoPath"
+				 [product-title] = "productTitle"
+				 [product-sub-title] = "productSubTitle"
+				 [product-color] = "productColor"
+				 [menu] = "menu"
+				 [search-placeholder] = "searchPlaceholder"
+				 [no-avatar-image] = "noAvatarImage"
+				 [avatar-image] = "avatarImage"></hmn-top-bar>
 
-	<div class="hmn-page__viewport">
-		<!-- TODO: Replace with actual Sidebar component -->
-		<aside class="hmn-sidebar"></aside>
+	<div class = "hmn-page__viewport">
+		<hmn-side-bar>
+			<ng-content scope = "[sidebar]"></ng-content>
+		</hmn-side-bar>
 
-		<div class="hmn-page__viewport__content">
+		<div class = "hmn-page__viewport__content">
 			<router-outlet></router-outlet>
 		</div>
 	</div>
 
-	<hmn-footer [productCopyrightYear]="productCopyrightYear"
-				[productVendor]="productVendor"
-				[productVersion]="productVersion"
-				[productVersionName]="productVersionName"></hmn-footer>
+	<hmn-footer [productCopyrightYear] = "productCopyrightYear"
+				[productVendor] = "productVendor"
+				[productVersion] = "productVersion"
+				[productVersionName] = "productVersionName"></hmn-footer>
 </div>
