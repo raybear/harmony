@@ -12,7 +12,7 @@ export class AppComponent {
 	public topBarMenuItems: HmnMenuLink[] = [
 		{
 			title: 'Home',
-			link: '/'
+			link: '/home'
 		},
 		{
 			title: 'Components',

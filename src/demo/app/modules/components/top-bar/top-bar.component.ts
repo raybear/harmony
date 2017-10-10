@@ -4,4 +4,4 @@ import { Component } from '@angular/core';
 	moduleId: module.id,
 	templateUrl: './top-bar.component.html'
 })
-export class TopBarComponent {}
+export class TopBarDemo {}

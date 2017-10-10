@@ -3,9 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
-import { HarmonyModule } from '../../lib/harmony.module';
+import { HarmonyModule } from '../../lib';
 import { AppRouterModule } from './app-router.module';
-import { TopBarComponent } from './modules/components/top-bar/top-bar.component';
 
 @NgModule( {
 	imports: [
@@ -16,9 +15,7 @@ import { TopBarComponent } from './modules/components/top-bar/top-bar.component'
 		AppRouterModule
 	],
 	declarations: [
-		AppComponent,
-
-		TopBarComponent
+		AppComponent
 	],
 	providers: [],
 	bootstrap: [ AppComponent ]
