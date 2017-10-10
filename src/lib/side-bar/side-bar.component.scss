@@ -1,0 +1,61 @@
+@import "../core/theming/palette";
+
+.hmn-sidebar__container {
+	display: flex;
+	background: map_get($hmn-gray, 'f');
+	border-right: 1px solid map_get($hmn-gray, 'e');
+}
+
+.hmn-sidebar {
+
+	display: flex;
+	flex-direction: column;
+	align-self: stretch;
+	width: 300px;
+	transition: all .2s ease-in-out;
+
+	&--collapsed {
+
+		width: 75px;
+	}
+
+	&__content {
+		flex-grow: 1;
+	}
+
+	&__toggle {
+		height: 45px;
+		border-top: 1px solid map_get($hmn-gray, 'e');
+		display: flex;
+		justify-content: flex-end;
+
+		button {
+			display: flex;
+			justify-content: center;
+			flex-grow: 1;
+			background: none;
+			max-width: 75px;
+			outline: none;
+			cursor: pointer;
+			height: 100%;
+			border: none;
+			border-left: 1px solid map_get($hmn-gray, 'e');
+			transition: background .2s;
+
+			&.collapsed {
+				border-left-color: transparent;
+			}
+
+			.fa {
+				font-size: 20px;
+				color: map_get($hmn-gray, 'b');
+			}
+
+			&:hover {
+				background: map_get($hmn-gray, 'e');
+			}
+		}
+	}
+}
+
+

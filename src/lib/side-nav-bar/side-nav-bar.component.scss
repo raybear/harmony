@@ -1,0 +1,41 @@
+@import "../core/theming/palette";
+
+.hmn-nav-sidebar {
+	display: flex;
+	align-self: stretch;
+	flex-direction: column;
+	overflow: hidden;
+
+	h2 {
+		padding: 15px 15px;
+		font-size: 18px;
+		font-weight: 500;
+		color: map_get($hmn-gray, '7');
+	}
+
+	ul {
+		display: flex;
+		align-items: stretch;
+		flex-direction: column;
+		margin: 0;
+		list-style: none;
+		width: 100%;
+		li {
+			display: flex;
+			align-self: stretch;
+			a {
+				cursor: pointer;
+				display: flex;
+				align-self: stretch;
+				line-height: 34px;
+				border-bottom: 2px solid transparent;
+				transition: background .1s;
+				width: 100%;
+				padding-left: 15px;
+				&:hover {
+					color: #fff;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,19 @@
+<aside class = "hmn-sidebar"
+	   [class.hmn-sidebar--collapsed] = "isCollapsed">
+
+	<div class = "hmn-sidebar__content">
+		<ng-content></ng-content>
+	</div>
+
+	<div class = "hmn-sidebar__toggle">
+		<button (click) = "toggleSidebar($event)"
+				[class.collapsed] = "isCollapsed">
+
+			<i class = "fa"
+			   [class.fa-chevron-right] = "isCollapsed"
+			   [class.fa-chevron-left] = "!isCollapsed">
+			</i>
+		</button>
+	</div>
+</aside>
+

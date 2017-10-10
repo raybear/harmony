@@ -1,0 +1,13 @@
+<div class="hmn-nav-sidebar">
+	<h2>Menu 1 </h2>
+	<ul>
+		<li *ngFor="let item of menuItems; let i = index">
+			<a (mouseover)="hovered=i"
+			   (mouseout)="hovered=-1"
+			   [ngStyle]="{'background': hovered == i ? productColor : 'transparent'}">
+
+				{{item}}
+			</a>
+		</li>
+	</ul>
+</div>
