@@ -18,11 +18,3 @@
 		}
 	}
 }
-
-// TODO: Remove placeholder element style once actual Sidebar component is implemented
-.hmn-sidebar {
-	display: block;
-	width: 300px;
-	background: map_get($hmn-gray, 'f');
-	border-right: 1px solid map_get($hmn-gray, 'e');
-}

@@ -10,8 +10,9 @@
 				 [avatar-image]="avatarImage"></hmn-top-bar>
 
 	<div class="hmn-page__viewport">
-		<!-- TODO: Replace with actual Sidebar component -->
-		<aside class="hmn-sidebar"></aside>
+		<hmn-side-bar>
+			<ng-content scope="[sidebar]"></ng-content>
+		</hmn-side-bar>
 
 		<div class="hmn-page__viewport__content">
 			<router-outlet></router-outlet>
