@@ -1,6 +1,5 @@
 
 export interface HmnMenuLink {
-
 	title?: string;
 	icon?: string;
 	link?: string;
