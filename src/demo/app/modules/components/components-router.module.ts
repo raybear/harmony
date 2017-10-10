@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { TopBarDemo } from './top-bar/top-bar.component';
+import { BannerDemo } from './banner/banner.component';
 
 const COMPONENTS_ROUTES: Routes = [
 	{
 		path: '',
-		component: TopBarDemo
+		component: BannerDemo
 	}
 ];
 

@@ -1,0 +1,47 @@
+@import "../core/theming/palette";
+
+.hmn-banner {
+
+	display: flex;
+	border: 1px solid transparent;
+	color: map_get($hmn-gray, 'f');
+	justify-content: center;
+	align-items: center;
+	margin: 10px 0;
+
+	&--info {
+
+		background: #23b1f7;
+
+	}
+
+	&--warning {
+
+		background: orange;
+	}
+
+	&--error {
+
+		background: #ea5a5a;
+	}
+
+	&--success {
+
+		background: #28bd8b;
+	}
+
+	&__icon {
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		align-self: stretch;
+		padding-left: 20px;
+		padding-right: 5px;
+		font-size: 18px;
+	}
+
+	&__message {
+		padding: 10px 20px 10px 10px;
+	}
+}

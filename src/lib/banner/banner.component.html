@@ -1,0 +1,10 @@
+<div [class]="'hmn-banner hmn-banner--lite ' + getBannerCssClass()">
+
+	<div class="hmn-banner__icon">
+		<i [class]="'fa fa-' + getBannerIcon()"></i>
+	</div>
+
+	<div class="hmn-banner__message">
+		<ng-content></ng-content>
+	</div>
+</div>
